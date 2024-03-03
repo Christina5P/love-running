@@ -64,7 +64,7 @@ color: #252525;
         display: none;
         top: 100%;
     }
-/*nav-toogle*/
+/*nav-toggle*/
 #nav-toggle:checked~nav {
     display: block;}
 
@@ -74,12 +74,14 @@ color: #252525;
     
 .nav-toggle-label {
     font-size: 2rem;
+
 }
 
 /*Main conent*/
     main {background-color: lightblue;
         /*Make main element take up any surplus space to push footer down*/
         flex: 1 0 auto ;
+        margin-top: 47px ;
     }
     /* Footer*/
  footer {background-color: orange;
