@@ -23,6 +23,9 @@ font-family:  sans-serif, 'Lato'
 header {
     background-color: lightcoral;
 }
+h1 { font-family: óswald´, sans-serif;
+
+}
 /*Main conent*/
     main {background-color: lightblue;
         /*Make main element take up any surplus space to push footer down*/
