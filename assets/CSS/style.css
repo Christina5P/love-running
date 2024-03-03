@@ -25,10 +25,36 @@ header {
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
+    width: 100% ;
+    box-shadow: 0 2px 2px #3a3a3a
 }
-h1 { font-family: óswald´, sans-serif;
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 
+h1 { font-family: óswald´, sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #252525;
 }
+/* Style nav menu with slighter larger text and space*/
+#menu > li
+{font-size: 110% ;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin-bottom: 1em;
+    }
+
+    #active{
+        border-bottom: 1px solid #3a3a3a3 ;
+
+    }
+    /*Navbar styles with dropdown toggle*/
+    nav{ position:absolute;
+        background-color: #ffffff ;
+    }
+
 /*Main conent*/
     main {background-color: lightblue;
         /*Make main element take up any surplus space to push footer down*/
