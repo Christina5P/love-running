@@ -1,4 +1,4 @@
-/* asterisk wildcard selector to override default atyles added by the browser*/
+/* asterisk wildcard selector to override default styles added by the browser*/
 
 /* Google font imports*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -39,7 +39,8 @@ header a {
     
 }
 
-h1, h2, h3 { font-family: 'Oswald', sans-serif;
+h1, h2, h3 { 
+font-family: 'Oswald', sans-serif;
 text-transform: uppercase;
 letter-spacing: 2px;
 color: #252525;
@@ -141,6 +142,21 @@ main {
     width: 300px;
     right: 50px;
   }
+  /*Reason section*/
+  #benefit-physical,
+  #benefit-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #benefit-physical,
+  #benefit-mental > div {
+        width: 75%;
+  }
+
+  #benefit-mental > div {
+    text-align: end;
+    align-self: flex-end;
 }
 }
 /* Large devices*/
@@ -174,4 +190,51 @@ position: relative;
 }
 #cover-text > h2, #cover-text > h3 {
     color: #ffffff;
+}
+/* textblocks with reasons*/
+#reasons {
+    width: 90%;
+    margin: 20px auto; 
+    
+    #reasons h2 {
+        font-size: 280%;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+    #reasons heading{
+        text-transform: uppercase;
+    }
+
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+line-height: 20px;
+margin-bottom: 20px;
+}
+#benefits p {
+    padding: 0 20px;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+/* img running girl*/
+#cirle-cover-bg {
+    /*has to be same height and width for circle*/
+    height: 90vw;
+    width: 90vw;
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+     margin-bottom: 20px;
+     /* to get a circle*/
+     border-radius: 50%;
+}
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
